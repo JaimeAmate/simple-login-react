@@ -15,7 +15,6 @@ import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import PropTypes from 'prop-types';
 import InfoBox from "../../ui/InfoBox/InfoBox";
-import {isValidName} from "../../../Utils/InputValidation";
 
 function Copyright() {
   return (

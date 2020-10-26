@@ -95,7 +95,8 @@ export default function CreateUserContainer() {
       if (response && response.status === 201) {
         setSignUpValues((oldValues) => ({
           ...oldValues,
-          isUserSignedUp: true
+          isUserSignedUp: true,
+          isServerError: false
         }))
       }
       else {

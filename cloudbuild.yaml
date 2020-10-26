@@ -1,0 +1,10 @@
+steps:
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['build',
+           '--build-arg',
+           'DEPLOY_ENV_ARG=${_DEPLOY_ENV}',
+           '-t',
+           'gcr.io/totemic-sector-293316/login-page-front',
+           '.']
+images:
+  - 'gcr.io/totemic-sector-293316/login-page-front'
